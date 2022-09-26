@@ -1,0 +1,7 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 40%;
+  border: solid 1.5 darkblue;
+}
