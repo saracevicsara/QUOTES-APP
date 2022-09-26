@@ -3,11 +3,29 @@ import "./Login.css";
 
 const Login = () => {
   return (
-    <div className="login-container">
-      <Grid container columns={{ xs: 4, md: 12 }}>
-        <TextField id="outlined-basic" label="Username" variant="outlined" />
-        <TextField id="outlined-basic" label="Password" variant="outlined" />
-        <Button variant="contained">Submmit</Button>
+    <div className="body">
+      <Grid container direction="column" alignItems="center">
+        <h1>LOG IN</h1>
+        <Grid sx={{ mt: "20px" }}>
+          <TextField
+            required
+            id="outlined-required"
+            label="Email"
+            className="color"
+          />
+        </Grid>
+        <Grid sx={{ mt: "20px" }}>
+          <TextField
+            required
+            id="outlined-password-input"
+            label="Password"
+            type="password"
+            className="color"
+          />
+        </Grid>
+        <Grid sx={{ mt: "20px" }}>
+          <Button variant="contained">SUBMIT</Button>
+        </Grid>
       </Grid>
     </div>
   );
