@@ -10,7 +10,7 @@ const Login = () => {
           <TextField
             required
             id="outlined-required"
-            label="Email"
+            label="Username"
             className="color"
           />
         </Grid>

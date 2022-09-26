@@ -14,8 +14,9 @@
   height: 100vh;
 }
 .color {
-  background-color: #1976d2;
+  background-color: #0e4173;
   width: 120%;
+  color: white;
 }
 h1 {
   color: #1976d2;
