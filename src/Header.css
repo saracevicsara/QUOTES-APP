@@ -3,3 +3,10 @@
   height: 10vh;
   background-color: black;
 }
+.log-out {
+  width: 15%;
+  height: 10%;
+  background-color: blue;
+  color: white;
+  text-align: center;
+}

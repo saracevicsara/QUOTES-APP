@@ -11,7 +11,7 @@ export default function QuoteList() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/quotes`, {
+      .get(`http://localhost:8000/quotes`, {
         headers: { Authorization: "Bearer " + userState.accessToken },
       })
       .then(({ data }) => {

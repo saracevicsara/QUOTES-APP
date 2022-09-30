@@ -17,7 +17,12 @@ export default function Header() {
             }}
           >
             <Link
-              style={{ color: "white", textDecoration: "none" }}
+              style={{
+                color: "white",
+                textDecoration: "none",
+                width: "15%",
+                height: "10%",
+              }}
               to="/login"
             >
               Logout
