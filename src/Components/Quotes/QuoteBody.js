@@ -1,4 +1,4 @@
-import "../../Css/Quote.css";
+import "./Quote.css";
 
 export default function QuoteBody({ data }) {
   return (

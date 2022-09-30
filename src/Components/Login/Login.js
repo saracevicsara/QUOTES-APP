@@ -11,7 +11,7 @@ const Login = () => {
     const { username, password } = loginData;
     const loginBody = { username, password };
 
-    axios.post("http://localhost:4000/sessions", loginBody).then(({ data }) => {
+    axios.post("http://localhost:8000/sessions", loginBody).then(({ data }) => {
       window.history.pushState("", "", "http://localhost:3000/");
       dispatchUserState({ type: "setToken", value: data.accessToken });
     });

@@ -1,23 +1,19 @@
 import axios from "axios";
-import { useEffect } from "react";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { useState } from "react";
-import { PageContext } from "../../Contexts/PageContext";
-import { UserContext } from "../../Contexts/UserContext";
-import "../../Css/quotesList.css";
+import "./QuoteList.css";
 import Quote from "./Quote";
+import { UserContext } from "../../Context/UserContext";
 
 export default function QuoteList() {
   const [quoteArray, setQuoteArray] = useState([]);
+  const { userState } = useContext(UserContext);
 
   useEffect(() => {
     axios
-      .get(
-        `http://localhost:4000/quotes?pageSize=5&page=${page}&sortBy=${sortBy}&sortDirection=${sortDir}&tags=${filterTags.toString()}`,
-        {
-          headers: { Authorization: "Bearer " + userState.accessToken },
-        }
-      )
+      .get(`http://localhost:4000/quotes`, {
+        headers: { Authorization: "Bearer " + userState.accessToken },
+      })
       .then(({ data }) => {
         setQuoteArray(data.quotes);
       })

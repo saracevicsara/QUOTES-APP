@@ -1,10 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import AddQuote from "./Components/AddQuote/AddQuote";
-import FilterQuotesBtn from "./Components/FilterQuotes/FilterQuotesBtn";
-import SortByButton from "./Components/SortBy/SortByButton";
-import { UserContext } from "./Contexts/UserContext";
-import "./Css/Header.css";
+import { UserContext } from "./Context/UserContext";
+import "./Header.css";
 
 export default function Header() {
   const { isUserLogged, dispatchUserState } = useContext(UserContext);
@@ -13,9 +10,6 @@ export default function Header() {
     <div className="header">
       {isUserLogged() ? (
         <>
-          <FilterQuotesBtn />
-          <SortByButton />
-          <AddQuote />
           <button
             onClick={() => {
               window.history.pushState("", "", "http://localhost:3000/login");
