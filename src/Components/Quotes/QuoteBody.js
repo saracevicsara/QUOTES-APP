@@ -1,5 +1,5 @@
 import "./Quote.css";
-
+import "./QuoteBody.css";
 export default function QuoteBody({ data }) {
   return (
     <div className="quoteBody">
