@@ -3,9 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .body {
-  background-color: rgb(15, 15, 61);
+  background-image: linear-gradient(120deg, #55616a, #151e26, #0b1016);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,10 +13,10 @@
   height: 100vh;
 }
 .color {
-  background-color: #0e4173;
+  background-color: #32455a;
   width: 120%;
   color: white;
 }
 h1 {
-  color: #1976d2;
+  color: #0e161d;
 }

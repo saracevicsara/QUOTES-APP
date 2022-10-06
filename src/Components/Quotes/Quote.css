@@ -1,7 +1,8 @@
 .quoteContainer {
-  width: 45%;
+  width: 50%;
   height: 90px;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-size: 18.5px;
   display: flex;
 }

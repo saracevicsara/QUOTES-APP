@@ -17,7 +17,12 @@ export default function Header() {
               dispatchUserState({ type: "clearToken" });
             }}
           >
-            <Link to="/login">Logout</Link>
+            <Link
+              to="/login"
+              style={{ textDecoration: "none", color: "lightblue" }}
+            >
+              Logout
+            </Link>
           </button>
         </>
       ) : (

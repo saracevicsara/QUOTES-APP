@@ -3,18 +3,24 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
 .quoteListContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   margin-top: 10px;
 }
 
 .quoteListContainer h1 {
-  color: #0e4173;
-  font-size: 44px;
+  color: #15202b;
+  font-size: 55px;
   font-weight: 500;
 }
