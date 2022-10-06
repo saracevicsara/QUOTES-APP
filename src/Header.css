@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(6, 62, 62);
+  background-image: linear-gradient(120deg, #8899a6 #22303c, #15202b);
 }
 .header {
   width: 100vw;
@@ -13,7 +13,7 @@ body {
 }
 .log-out {
   width: 15%;
-  height: 10%;
+  height: 70%;
   background-color: blue;
   color: white;
   text-align: center;

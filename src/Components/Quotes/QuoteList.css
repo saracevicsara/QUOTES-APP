@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .quoteListContainer {
   width: 100%;
   display: flex;
@@ -5,11 +11,10 @@
   align-items: center;
   height: 100vh;
   margin-top: 10px;
-  border: solid 1px black;
 }
 
 .quoteListContainer h1 {
-  color: white;
+  color: #0e4173;
   font-size: 44px;
   font-weight: 500;
 }

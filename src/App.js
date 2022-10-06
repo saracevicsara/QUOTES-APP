@@ -1,4 +1,4 @@
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Redirect } from "react-router-dom";
 import Header from "./Header";
 import QuoteList from "./Components/Quotes/QuoteList";
 import Login from "./Components/Login/Login";
@@ -17,11 +17,29 @@ export default function App() {
       <PageContext.Provider value={{ page, setPage }}>
         <BrowserRouter>
           <Header />
-          <Route path="/login" component={isUserLogged() ? QuoteList : Login} />
+          <Route
+            path="/login"
+            render={(props) => {
+              return isUserLogged() ? (
+                <Redirect {...props} to="/" />
+              ) : (
+                <Login {...props} />
+              );
+            }}
+          />
           <Route
             exact
             path="/"
-            component={isUserLogged() ? QuoteList : Login}
+            render={(props) => {
+              return isUserLogged() ? (
+                <QuoteList {...props} />
+              ) : (
+                <Redirect {...props} to="/login" />
+              );
+            }}
+            // component={
+            //   isUserLogged() ? QuoteList : <Redirect to="/somewhere/else" />
+            // }
           />
           {isUserLogged()}
         </BrowserRouter>
