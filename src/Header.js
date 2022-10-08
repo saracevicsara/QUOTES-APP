@@ -27,9 +27,13 @@ export default function Header() {
         </>
       ) : (
         <button>
-          <Link style={{ color: "white", textDecoration: "none" }} to="/login">
+          {/* <Link
+            style={{ color: "", textDecoration: "none" }}
+            className="log-in"
+            to="/login"
+          >
             Login
-          </Link>
+          </Link> */}
         </button>
       )}
     </div>

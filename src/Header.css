@@ -1,5 +1,12 @@
 body {
-  background-image: linear-gradient(120deg, #55616a, #22303c, #15202b);
+  background-image: linear-gradient(
+    120deg,
+    #52595f,
+    #4a555d,
+    #4a555d,
+    hsl(208, 25%, 22%),
+    #1f2e3d
+  );
 }
 .header {
   width: 100vw;
@@ -11,6 +18,15 @@ body {
   align-items: center;
 }
 .log-out {
+  width: 10%;
+  height: 65%;
+  background-color: #263949;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  margin-right: 40px;
+}
+.log-in {
   width: 10%;
   height: 65%;
   background-color: #263949;

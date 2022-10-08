@@ -44,7 +44,7 @@ const Login = () => {
           />
         </Grid>
         <Grid sx={{ mt: "20px" }}>
-          <Button variant="text " textPrimary="lightblue" onClick={loginSubmit}>
+          <Button variant="outlined" onClick={loginSubmit}>
             SUBMIT
           </Button>
         </Grid>

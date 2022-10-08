@@ -4,7 +4,13 @@
   box-sizing: border-box;
 }
 .body {
-  background-image: linear-gradient(120deg, #55616a, #151e26, #0b1016);
+  background-image: linear-gradient(
+    120deg,
+    #616a71,
+    #4a555d,
+    hsl(207, 26%, 25%),
+    #17202a
+  );
   overflow-y: hidden;
   display: flex;
   justify-content: center;
@@ -13,7 +19,7 @@
   height: 100vh;
 }
 .color {
-  background-color: #32455a;
+  background-color: #3d5067;
   width: 107%;
 }
 h1 {
